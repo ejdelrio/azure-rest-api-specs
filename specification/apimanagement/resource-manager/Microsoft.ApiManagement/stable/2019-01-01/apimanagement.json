@@ -167,7 +167,6 @@
       "description": "API identifier. Must be unique in the current API Management service instance.",
       "minLength": 1,
       "maxLength": 80,
-      "pattern": "^[^*#&+:<>?]+$",
       "x-ms-parameter-location": "method"
     },
     "ApiIdRevParameter": {
@@ -229,7 +228,6 @@
       "description": "Identifier of the Backend entity. Must be unique in the current API Management service instance.",
       "minLength": 1,
       "maxLength": 80,
-      "pattern": "^[^*#&+:<>?]+$",
       "x-ms-parameter-location": "method"
     },
     "CacheIdParameter": {
@@ -307,7 +305,6 @@
       "description": "Group identifier. Must be unique in the current API Management service instance.",
       "minLength": 1,
       "maxLength": 256,
-      "pattern": "^[^*#&+:<>?]+$",
       "x-ms-parameter-location": "method"
     },
     "IdentityProviderNameParameter": {
@@ -479,7 +476,6 @@
       "description": "Operation identifier within an API. Must be unique in the current API Management service instance.",
       "minLength": 1,
       "maxLength": 80,
-      "pattern": "^[^*#&+:<>?]+$",
       "x-ms-parameter-location": "method"
     },
     "PolicyExportFormat": {
@@ -490,9 +486,7 @@
       "description": "Policy Export Format.",
       "enum": [
         "xml",
-        "xml-link",
-        "rawxml",
-        "rawxml-link"
+        "rawxml"
       ],
       "x-ms-enum": {
         "name": "PolicyExportFormat",
@@ -503,16 +497,8 @@
             "description": "The contents are inline and Content type is an XML document."
           },
           {
-            "value": "xml-link",
-            "description": "The policy XML document is exported to a storage blob with SAS key valid for 5 minutes."
-          },
-          {
             "value": "rawxml",
             "description": "The contents are inline and Content type is a non XML encoded policy document."
-          },
-          {
-            "value": "rawxml-link",
-            "description": "The policy document is not XML encoded is exported to a storage blob with SAS Key valid for 5 minutes."
           }
         ]
       },
@@ -542,7 +528,6 @@
       "description": "Product identifier. Must be unique in the current API Management service instance.",
       "minLength": 1,
       "maxLength": 256,
-      "pattern": "^[^*#&+:<>?]+$",
       "x-ms-parameter-location": "method"
     },
     "PropertyIdParameter": {
@@ -696,7 +681,6 @@
       "description": "User identifier. Must be unique in the current API Management service instance.",
       "minLength": 1,
       "maxLength": 80,
-      "pattern": "^[^*#&+:<>?]+$",
       "x-ms-parameter-location": "method"
     }
   }
